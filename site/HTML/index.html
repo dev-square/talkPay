@@ -10,7 +10,7 @@
     <link rel = "shurtcut icon" href="../img/iconMercadoPago.png">
    
 </head>
-<body>
+<body id='tela'>
     <header>
         <img src="../img/iconBack.svg" alt="icone de voltar página" width="25" height="25">
         <img src="../img/logoMercadopago.png" alt="logo do mercado pago">
@@ -20,19 +20,21 @@
     <section class= 'conteudoprincipalAPP'>
         <div class='conteudoAPP'>
            <form>
-               <input type="text" placeholder="E-mail" style="width: 10%;" id="txtEmail">
-               <input type="text" placeholder="Valor" style="width: 10%;" id="txtValue">
-               <input type="text" placeholder="Mensagem" style="width: 10%;" id="txtMsg">
+               <label for="textEmail">E-mail</label>
+               <input type="text" id="txtEmail" class="email">
+               <label for="txtValue">Valor</label>
+               <input type="text" id="txtValue" class="valor">
+               <label for="txtMsg">Mensagem</label>
+               <input type="text" id="txtMsg" class="mensagem">
            </form>
         </div>
     </section>
     <section class="containerSpeaker">
         <div class="speaker" id ="speaker"></div>
     </section>
-    <script src='../Script/animate.js'></script>
+    <script src="../Script/clicouTela.js"></script>
 </body>
 </html>
-
 <script>
     // Test browser support
     window.SpeechRecognition = window.SpeechRecognition ||
