@@ -8,7 +8,6 @@
     <link rel='stylesheet' type='text/css' href="../Styles/gerenciador.css">
     <link rel='stylesheet' type='text/css' href="../Styles/cssReset.css">
    
-    
 </head>
 <body>
     <header>
@@ -19,7 +18,11 @@
     </header>
     <section class= 'conteudoprincipalAPP'>
         <div class='conteudoAPP'>
-           
+           <form>
+               <input type="text" placeholder="E-mail" style="width: 10%;" id="txtEmail">
+               <input type="text" placeholder="Valor" style="width: 10%;" id="txtValue">
+               <input type="text" placeholder="Mensagem" style="width: 10%;" id="txtMsg">
+           </form>
         </div>
     </section>
     <section class="containerSpeaker">
@@ -28,3 +31,26 @@
     <!-- <script src='main.js'></script> -->
 </body>
 </html>
+
+<script>
+    // Test browser support
+    window.SpeechRecognition = window.SpeechRecognition ||
+    window.webkitSpeechRecognition ||
+    null;
+    
+    
+    //caso não suporte esta API DE VOZ            
+    if (window.SpeechRecognition === null) {
+        //navegador não suporta
+        alert("Infelizmente seu navegador não suporta o reconhecimento de voz. Tente o Google Chrome");
+    }
+    
+    document.querySelector("#rect").addEventListener("click",function(){
+        listen();
+    });
+    
+    function start(){
+        //document.getElementById('start').className = "hidden";
+        conversation();
+    }
+    </script>
