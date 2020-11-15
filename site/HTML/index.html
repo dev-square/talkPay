@@ -15,11 +15,14 @@
         <img src="../img/iconBack.svg" alt="icone de voltar página" width="25" height="25">
         <img src="../img/logoMercadopago.png" alt="logo do mercado pago">
         <img src="../img/iconSino.svg"  alt="icone de notificação" width="25" height="25">
-    
     </header>
+
     <section class= 'conteudoprincipalAPP'>
         <div class='conteudoAPP'>
-           <form>
+            <button id="start" onclick="start()">Começar</button>
+            <div id="transcription2">...</div>
+            <div id="context">Contexto: 0</div>
+           <form id="form1" action="dinamico.php" method="POST">
                <input type="text" placeholder="E-mail" style="width: 10%;" id="txtEmail">
                <input type="text" placeholder="Valor" style="width: 10%;" id="txtValue">
                <input type="text" placeholder="Mensagem" style="width: 10%;" id="txtMsg">
@@ -30,6 +33,7 @@
         <div class="speaker" id ="speaker"></div>
     </section>
     <script src='../Script/animate.js'></script>
+    <script src='../Script/comunicacoes.js'></script>
 </body>
 </html>
 
@@ -39,19 +43,14 @@
     window.webkitSpeechRecognition ||
     null;
     
-    
     //caso não suporte esta API DE VOZ            
     if (window.SpeechRecognition === null) {
         //navegador não suporta
         alert("Infelizmente seu navegador não suporta o reconhecimento de voz. Tente o Google Chrome");
     }
     
-    document.querySelector("#rect").addEventListener("click",function(){
-        listen();
-    });
-    
     function start(){
-        //document.getElementById('start').className = "hidden";
+        document.getElementById('start').className = "hidden";
         conversation();
     }
     </script>

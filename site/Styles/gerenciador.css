@@ -3,7 +3,9 @@ body {
   width: 100vw;
   height: 100vh;
 }
-
+.hidden{
+  display: none;
+}
 body header {
   z-index: 10;
   position: relative;
