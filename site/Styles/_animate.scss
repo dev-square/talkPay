@@ -1,0 +1,21 @@
+@keyframes headerAnimate {
+    from {height: 0px;}
+    to {height: 8%;}
+}
+
+@keyframes contentAnimate {
+    from {height: 0px;}
+    to {height: 60%;}
+}
+
+@keyframes containerSpeakerAnimate{
+    from {height: 0px;}
+    to {height: 25.8%;}
+}
+@keyframes speakerAnimate{
+    from{width: 0;}
+    to{height: 130px;}
+
+    from{width: 0;}
+    to{margin-top: 130px;}
+}
