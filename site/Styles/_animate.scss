@@ -14,8 +14,17 @@
 }
 @keyframes speakerAnimate{
     from{width: 0;}
-    to{height: 130px;}
+    to{width: 130px;}
 
-    from{width: 0;}
-    to{margin-top: 130px;}
+    from{height: 0;}
+    to{height: 130px;}
+}
+@keyframes speakeropacity{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+@keyframes iconAnimate{
+    from{opacity: 0};
+    to{opacity: 1;}
 }
