@@ -99,6 +99,93 @@ body .conteudoprincipalAPP form .mensagem {
   height: 60px;
 }
 
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500&subset=latin-ext';
+
+* {
+	z-index: 0;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	color: #f1f1f1;
+	background-color: #ffffff;
+}
+
+.card {
+	background-color: #FFFFFF;
+	box-shadow: 0 3px 6px rgba(51, 50, 50, 0.16), 0 3px 6px rgba(37, 37, 37, 0.23);
+	border-radius: 5px;
+}
+
+.card#card-visitors {
+	position: relative;
+	width: 300px;
+	height: 400px;
+	margin: calc((100vh - 400px) / 2) auto;
+}
+
+.card#card-visitors .header .content {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.card#card-visitors .header {
+	width: 100%;
+	height: 60%;
+	background-color: #E91E63;
+}
+
+.card#card-visitors .header {
+	width: 100%;
+	height: 60%;
+	background-color: #007AAF;
+}
+
+.card#card-visitors .header .content .title {
+	margin-top: 15px;
+	font-size: 25px;
+	line-height: 30px;
+	text-align: center;
+}
+
+.card#card-visitors .header .content .date {
+	width: 100%;
+	opacity: .7;
+	text-align: center;
+}
+
+.card#card-visitors .info {
+	width: calc(100% - 40px);
+	height: calc(40% - 80px);
+	padding: 40px 20px;
+	color: #383737;
+}
+
+.card#card-visitors .info .counter {
+	margin-top: 8px;
+	color: #212121;
+	font-size: 45px;
+	font-weight: 400;
+	line-height: 40px;
+}
+
+.card#card-visitors .info .counter .unit {
+	font-size: 15px;
+}
+
+
 body .containerSpeaker {
   position: relative;
   z-index: 0;
