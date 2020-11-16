@@ -1,0 +1,49 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #2196F3;
+  position: relative;
+}
+
+body .verificado img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  height: 90%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation: verificadoAnimate 0.5s 1;
+          animation: verificadoAnimate 0.5s 1;
+}
+
+@-webkit-keyframes verificadoAnimate {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 90%;
+  }
+  from {
+    height: 0px;
+  }
+  to {
+    height: 90%;
+  }
+}
+
+@keyframes verificadoAnimate {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 90%;
+  }
+  from {
+    height: 0px;
+  }
+  to {
+    height: 90%;
+  }
+}
+/*# sourceMappingURL=gerenciadorVerificado.css.map */
