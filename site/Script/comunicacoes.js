@@ -55,8 +55,8 @@ function listen(){
                     if (Globalcontext == 5) document.getElementById(presentIntent.field).value = userSaid.substr(3,10);
                 }
                 conversation();
-                document.getElementById("transcription2").textContent = userSaid;
-                document.getElementById("context").textContent = "Contexto: " + Globalcontext;
+                //document.getElementById("transcription2").textContent = userSaid;
+               // document.getElementById("context").textContent = "Contexto: " + Globalcontext;
             }else{
                 userSaid += event.results[i][0].transcript;
             }
