@@ -15,7 +15,14 @@ function say(phrase,ouvir){
         utter.onend = function() {
             if (presentIntent.field.substr(0,4) == "form") 
             document.getElementById(presentIntent.field).submit();
-            else if (ouvir == true) listen();
+            else {
+                //Condicional para falas que não são seguidas de uma entrada do usuário
+                if (ouvir == true) listen();
+                //
+                if (presentIntent.field.substr(0,5) == "trans"){
+                    document.getElementById(presentIntent.field.substr(5,presentIntent.field.length-5)).className = "hidden";
+                }
+            }
             //Escutando...
         }
 }
@@ -88,7 +95,7 @@ function intentMk(context,tp,response,nextContext = 0,field=""){
 intentMk(-1,'','Desculpe, não entendi');
 intentMk(0,'','Olá!. Prefere que eu liste os serviços ou tem um em mente?',1);
 intentMk(1,'Liste os serviços','Você tem as opções de transferência, saque ou adicionar dinheiro',2);
-intentMk(2,'transferência','Deseja tranferir por  uma conta do mercado pago ou utilizar outro cartão?',3);
+intentMk(2,'transferência','Deseja tranferir por  uma conta do mercado pago ou utilizar outro cartão?',3,'transTranfer');
 intentMk(3,'Mercado Pago','Informe o e-mail da conta para a qual enviar o dinheiro',4,'txtEmail');
 intentMk(4,'any','informe o valor a ser enviado',5,'txtValue');
 intentMk(5,'any','diga uma mensagem para a conta creditada',6,'txtMsg');
