@@ -96,5 +96,20 @@ body{
             animation: speakerAnimate 1s 1;
                   
         }
+        .speakerAtivado{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            background-color: white;
+            border-width: 18px;
+            border-color: #007AAF;
+            border-style: solid;
+            animation: speakerAtivado 0.4s infinite ;
+                  
+        }
     }
 }
