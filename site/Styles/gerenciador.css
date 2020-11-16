@@ -44,6 +44,63 @@ body .conteudoprincipalAPP {
           animation: contentAnimate 1s 1;
 }
 
+body .conteudoprincipalAPP form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+}
+
+body .conteudoprincipalAPP form label {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+body .conteudoprincipalAPP form .email {
+  padding: 0 4%;
+  height: 35px;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 6px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  margin-top: 4px;
+}
+
+body .conteudoprincipalAPP form .valor {
+  padding: 0 4%;
+  height: 35px;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 6px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  margin-top: 4px;
+}
+
+body .conteudoprincipalAPP form .mensagem {
+  padding: 0 4%;
+  height: 35px;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 6px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  margin-top: 4px;
+  height: 60px;
+}
+
 body .containerSpeaker {
   position: relative;
   z-index: 0;
