@@ -1,0 +1,29 @@
+@-webkit-keyframes verificadoAnimate {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 90%;
+  }
+  from {
+    height: 0px;
+  }
+  to {
+    height: 90%;
+  }
+}
+@keyframes verificadoAnimate {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 90%;
+  }
+  from {
+    height: 0px;
+  }
+  to {
+    height: 90%;
+  }
+}
+/*# sourceMappingURL=animateVerify.css.map */

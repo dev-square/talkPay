@@ -1,0 +1,18 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #2196F3;
+    position: relative;
+
+    .verificado{
+        img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 90%;
+            height: 90%;
+            transform: translate(-50%, -50%);
+            animation: verificadoAnimate 0.5s 1;
+        }    
+    }
+}
