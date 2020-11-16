@@ -1,3 +1,19 @@
-<?php
-echo "pagamento efetuado";
-?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>transferência realizada</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link rel='stylesheet' type='text/css' href="../Styles/tranferCompleta/gerenciadorVerificado.css">
+    <link rel='stylesheet' type='text/css' href="../Styles/cssReset.css">
+    <link rel = "shurtcut icon" href="../img/iconMercadoPago.png">
+</head>
+<body>
+    <div class="verificado">
+        <img src="../img/iconVerificado.svg" alt="transferência completa">
+    </div>
+<script src='../Script/comunicacoes.js'></script>
+</body>
+</html>

@@ -12,6 +12,7 @@ function say(phrase,ouvir){
         utter.rate = 2;
         window.speechSynthesis.speak(utter);
         //Falando...
+        document.getElementById("speakerAtivado").className = "speakerAtivado";
         utter.onend = function() {
             if (presentIntent.field.substr(0,4) == "form") 
             document.getElementById(presentIntent.field).submit();
@@ -20,6 +21,7 @@ function say(phrase,ouvir){
                 if (ouvir == true) listen();
             }
             //Escutando...
+            document.getElementById("speakerAtivado").className = "speaker";
         }
 }
 //FUNÇÃO QUE ADMINISTRA O FLUXO DA CONVERSA
@@ -109,5 +111,5 @@ intentMk(3,'Mercado Pago','Informe o e-mail da conta para a qual enviar o dinhei
 intentMk(4,'any','informe o valor a ser enviado',5,'txtValue');
 intentMk(5,'any','diga uma mensagem para a conta creditada',6,'txtMsg');
 intentMk(6,'any','Tem certeza das informações prestadas?',7);
-intentMk(7,'sim','Enviando formulário',8,'form1');
+intentMk(7,'sim','Enviando formulário. Transferência realizada com sucesso. Você será redirecionado para tela principal',8,'form1');
 intentMk(7,'não','vamos revisar. Deseja tranferir por  uma conta do mercado pago ou utilizar outro cartão?',3);
